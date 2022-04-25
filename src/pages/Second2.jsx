@@ -43,24 +43,45 @@ export default function CustomTabs() {
       </Box>
       <Box w="100%" pl="10%" pr="10%">
         <Tabs>
-          <TabList>
+          <TabList
+            d="flex"
+            flexDirection={{
+              sm: 'column',
+              md: 'column',
+              lg: 'column',
+              xl: 'row',
+              base: 'column',
+            }}
+          >
             <CustomTab mr="20">
-              <Heading as="h3" size="1xl">
+              <Heading
+                fontSize={{ base: 'xl', md: '2xl', lg: '3xl' }}
+                align="center"
+              >
                 РАЗРАБОТКА ПРОДУКТА
               </Heading>
             </CustomTab>
             <CustomTab mr="20">
-              <Heading as="h3" size="1xl">
+              <Heading
+                fontSize={{ base: 'xl', md: '2xl', lg: '3xl' }}
+                align="center"
+              >
                 ПРОТОТИПЫ И ТЕСТИРОВАНИЕ
               </Heading>
             </CustomTab>
             <CustomTab mr="20">
-              <Heading as="h3" size="1xl">
+              <Heading
+                fontSize={{ base: 'xl', md: '2xl', lg: '3xl' }}
+                align="center"
+              >
                 ПРОИЗВОДСТВО И СЕРВИСНОЕ ОБСЛУЖИВАНИЕ
               </Heading>
             </CustomTab>
             <CustomTab>
-              <Heading as="h3" size="1xl">
+              <Heading
+                fontSize={{ base: 'xl', md: '2xl', lg: '3xl' }}
+                align="center"
+              >
                 ОДОБРЕНИЯ АГЕНТСТВА
               </Heading>
             </CustomTab>
@@ -68,13 +89,27 @@ export default function CustomTabs() {
           <TabPanels>
             <TabPanel>
               <Box mt="5">
-                <Grid templateColumns="repeat(2, 1fr)" gap={6} w="100%">
-                  <Box maxWidth="700px">
+                <Grid
+                  templateColumns={{
+                    sm: 'repeat(1, 1fr)',
+                    md: 'repeat(1, 1fr)',
+                    lg: 'repeat(2, 1fr)',
+                    xl: 'repeat(2, 1fr)',
+                    base: 'repeat(1, 1fr)',
+                  }}
+                  gap={6}
+                  w="100%"
+                >
+                  <Box
+                    w={[100, 300, 500, 700]}
+                    h={[100, 300, 500, 700]}
+                    alignItems="center"
+                  >
                     {/*<Image src={production1} w="100%" />*/}
                     <SecondImages1 />
                   </Box>
                   <Box>
-                    <Heading as="h3" size="1xl">
+                    <Heading fontSize={{ base: 'xl', md: '2xl', lg: '3xl' }}>
                       РАЗРАБОТКА ПРОДУКТА
                     </Heading>
                     <Text textAlign="justify" width="100%">
@@ -102,13 +137,26 @@ export default function CustomTabs() {
             </TabPanel>
             <TabPanel>
               <Box mt="5">
-                <Grid templateColumns="repeat(2, 1fr)" gap={6}>
-                  <Box maxWidth="700px">
+                <Grid
+                  templateColumns={{
+                    sm: 'repeat(1, 1fr)',
+                    md: 'repeat(1, 1fr)',
+                    lg: 'repeat(2, 1fr)',
+                    xl: 'repeat(2, 1fr)',
+                    base: 'repeat(1, 1fr)',
+                  }}
+                  gap={6}
+                >
+                  <Box
+                    w={[100, 300, 500, 700]}
+                    h={[100, 300, 500, 700]}
+                    alignItems="center"
+                  >
                     <SecondImages2 />
                     {/*<Image src={prototyping1} w="100%" />*/}
                   </Box>
                   <Box>
-                    <Heading as="h3" size="1xl">
+                    <Heading fontSize={{ base: 'xl', md: '2xl', lg: '3xl' }}>
                       ПРОТОТИПЫ И ТЕСТИРОВАНИЕ
                     </Heading>
                     <Text textAlign="justify" width="100%">
@@ -131,13 +179,26 @@ export default function CustomTabs() {
             </TabPanel>
             <TabPanel>
               <Box mt="5">
-                <Grid templateColumns="repeat(2, 1fr)" gap={6}>
-                  <Box maxWidth="700px">
+                <Grid
+                  templateColumns={{
+                    sm: 'repeat(1, 1fr)',
+                    md: 'repeat(1, 1fr)',
+                    lg: 'repeat(2, 1fr)',
+                    xl: 'repeat(2, 1fr)',
+                    base: 'repeat(1, 1fr)',
+                  }}
+                  gap={6}
+                >
+                  <Box
+                    w={[100, 300, 500, 700]}
+                    h={[100, 300, 500, 700]}
+                    alignItems="center"
+                  >
                     <SecondImages3 />
                     {/*<Image src={mfg5} w="100%" />*/}
                   </Box>
                   <Box>
-                    <Heading as="h3" size="1xl">
+                    <Heading fontSize={{ base: 'xl', md: '2xl', lg: '3xl' }}>
                       ПРОИЗВОДСТВО И СЕРВИСНОЕ ОБСЛУЖИВАНИЕ
                     </Heading>
                     <Text textAlign="justify" width="100%">
@@ -158,13 +219,26 @@ export default function CustomTabs() {
             </TabPanel>
             <TabPanel>
               <Box mt="5">
-                <Grid templateColumns="repeat(2, 1fr)" gap={6}>
-                  <Box maxWidth="700px">
+                <Grid
+                  templateColumns={{
+                    sm: 'repeat(1, 1fr)',
+                    md: 'repeat(1, 1fr)',
+                    lg: 'repeat(2, 1fr)',
+                    xl: 'repeat(2, 1fr)',
+                    base: 'repeat(1, 1fr)',
+                  }}
+                  gap={6}
+                >
+                  <Box
+                    w={[100, 300, 500, 700]}
+                    h={[100, 300, 500, 700]}
+                    alignItems="center"
+                  >
                     <SecondImages4 />
                     {/*<Image src={approvals3} w="100%" />*/}
                   </Box>
                   <Box>
-                    <Heading as="h3" size="1xl">
+                    <Heading fontSize={{ base: 'xl', md: '2xl', lg: '3xl' }}>
                       ОДОБРЕНИЯ АГЕНТСТВА
                     </Heading>
                     <Text textAlign="justify" width="100%">

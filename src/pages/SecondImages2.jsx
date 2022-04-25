@@ -64,7 +64,7 @@ export default function CaptionCarousel() {
   return (
     <Box
       position={'relative'}
-      height={'600px'}
+      height={[100, 300, 500, 700]}
       width={'full'}
       overflow={'hidden'}
     >
@@ -111,7 +111,7 @@ export default function CaptionCarousel() {
         {cards.map((card, index) => (
           <Box
             key={index}
-            height={'xl'}
+            height={[100, 300, 500, 700]}
             position="relative"
             backgroundPosition="center"
             backgroundRepeat="no-repeat"

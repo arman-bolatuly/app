@@ -47,7 +47,17 @@ export default function Contact() {
 
   return (
     <Box>
-      <Grid templateColumns="repeat(2, 1fr)" width="100%" height="auto">
+      <Grid
+        templateColumns={{
+          sm: 'repeat(1, 1fr)',
+          md: 'repeat(1, 1fr)',
+          lg: 'repeat(1, 1fr)',
+          xl: 'repeat(2, 1fr)',
+          base: 'repeat(1, 1fr)',
+        }}
+        width="100%"
+        height="auto"
+      >
         <Box>
           <Flex
             bg={useColorModeValue('gray.100', 'gray.900')}

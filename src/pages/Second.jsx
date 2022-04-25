@@ -6,12 +6,14 @@ import {
   Heading,
   Grid,
   Divider,
+  useMediaQuery,
 } from '@chakra-ui/react';
 import newicon1 from '../assets/new-icon1.png';
 import newicon2 from '../assets/design2.png';
 import newicon3 from '../assets/new-icon2.png';
 
 export default function Second() {
+  const [isLargerThan1280] = useMediaQuery('(min-width: 1280px)');
   return (
     <>
       <Box mt="10" mb="10">
@@ -26,7 +28,16 @@ export default function Second() {
             НАШИ ВОЗМОЖНОСТИ
           </Heading>
 
-          <Grid templateColumns="repeat(3, 1fr)" gap={6}>
+          <Grid
+            templateColumns={{
+              sm: 'repeat(1, 1fr)',
+              md: 'repeat(2, 1fr)',
+              lg: 'repeat(2, 1fr)',
+              xl: 'repeat(3, 1fr)',
+              base: 'repeat(1, 1fr)',
+            }}
+            gap={6}
+          >
             <Box
               p="15px"
               width="100%"

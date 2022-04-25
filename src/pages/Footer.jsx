@@ -25,7 +25,17 @@ export default function Footer() {
     <>
       <Box>
         <Container maxWidth="100%">
-          <Grid templateColumns="repeat(2, 1fr)" width="100%" height="auto">
+          <Grid
+            templateColumns={{
+              sm: 'repeat(1, 1fr)',
+              md: 'repeat(1, 1fr)',
+              lg: 'repeat(1, 1fr)',
+              xl: 'repeat(2, 1fr)',
+              base: 'repeat(1, 1fr)',
+            }}
+            width="100%"
+            height="auto"
+          >
             <Box width="100%" p="0" m="0">
               <AspectRatio ratio={16 / 9}>
                 <iframe

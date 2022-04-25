@@ -1,6 +1,6 @@
 import React from 'react';
 import { ChakraProvider, theme } from '@chakra-ui/react';
-import { Routes, Route } from 'react-router-dom';
+//import { Routes, Route } from 'react-router-dom';
 //import Layouts from './components/Layouts';
 import Navbar from './pages/Navbar';
 import First from './pages/First';
